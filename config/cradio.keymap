@@ -14,9 +14,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -44,7 +44,7 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W           &kp E        &mt LC(LALT) R    &mt LC(LS(LALT)) T    &mt RC(RS(RALT)) Y  &mt RC(RALT) U     &kp I        &kp O       &kp P
+&kp Q  &kp W           &kp E        &ht LC(LALT) R    &ht LC(LS(LALT)) T    &ht RC(RS(RALT)) Y  &ht RC(RALT) U     &kp I        &kp O       &kp P
 &kp A  &ht LEFT_ALT S  &ht LCTRL D  &ht LEFT_SHIFT F  &ht LEFT_GUI G        &ht RIGHT_GUI H     &ht RIGHT_SHIFT J  &ht RCTRL K  &ht RALT L  &kp SEMI
 &kp Z  &kp X           &kp C        &kp V             &kp B                 &kp N               &kp M              &kp COMMA    &kp DOT     &kp FSLH
                                     &to 1             &kp SPACE             &kp RETURN          &ht ESC BSPC
@@ -53,9 +53,9 @@
 
         right_layer {
             bindings = <
-&kp N5        &kp NUMBER_4    &kp NUMBER_3     &mt RC(LALT) NUMBER_2   &mt LS(LC(LALT)) NUMBER_1    &mt RC(RS(RALT)) NUMBER_6  &mt RS(RC(RALT)) N7   &kp N8        &kp N9          &kp N0
+&kp N5        &kp NUMBER_4    &kp NUMBER_3     &ht RC(LALT) NUMBER_2   &ht LS(LC(LALT)) NUMBER_1    &ht RC(RS(RALT)) NUMBER_6  &ht RS(RC(RALT)) N7   &kp N8        &kp N9          &kp N0
 &ht CAPS TAB  &ht LALT MINUS  &ht LCTRL EQUAL  &ht LSHFT LEFT_BRACKET  &ht LGUI RIGHT_BRACKET       &ht RGUI LEFT              &ht RIGHT_SHIFT DOWN  &ht RCTRL UP  &ht RALT RIGHT  &kp SINGLE_QUOTE
-&bt BT_PRV    &bt BT_NXT      &kp GRAVE        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS        &kp BACKSLASH              &kp C_VOL_DN          &kp C_MUTE    &kp C_VOL_UP    &bt BT_CLR_ALL
+&bt BT_PRV    &none           &kp GRAVE        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS        &kp BACKSLASH              &kp C_VOL_DN          &kp C_MUTE    &kp C_VOL_UP    &bt BT_CLR_ALL
                                                &to 0                   &kp SPACE                    &kp RETURN                 &kp BACKSPACE
             >;
         };
