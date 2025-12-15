@@ -55,7 +55,7 @@
             bindings = <
 &kp N5        &kp NUMBER_4    &kp NUMBER_3     &mt RC(LALT) NUMBER_2   &mt LS(LC(LALT)) NUMBER_1    &mt RC(RS(RALT)) NUMBER_6  &mt RS(RC(RALT)) N7   &kp N8        &kp N9          &kp N0
 &ht CAPS TAB  &ht LALT MINUS  &ht LCTRL EQUAL  &ht LSHFT LEFT_BRACKET  &ht LGUI RIGHT_BRACKET       &ht RGUI LEFT              &ht RIGHT_SHIFT DOWN  &ht RCTRL UP  &ht RALT RIGHT  &kp SINGLE_QUOTE
-&bt BT_PRV    &bt BT_NXT      &kp GRAVE        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS        &kp BACKSLASH              &kp C_VOL_DN          &kp C_MUTE    &kp C_VOL_UP    &kp RC(RG(Q))
+&bt BT_PRV    &bt BT_NXT      &kp GRAVE        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS        &kp BACKSLASH              &kp C_VOL_DN          &kp C_MUTE    &kp C_VOL_UP    &bt BT_CLR_ALL
                                                &to 0                   &kp SPACE                    &kp RETURN                 &kp BACKSPACE
             >;
         };
